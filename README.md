@@ -6,7 +6,7 @@
 [![Agent Skills](https://img.shields.io/badge/Agent%20Skills-compatible-111827.svg)](https://agentskills.io)
 [![Clinical UI Score](https://img.shields.io/badge/Clinical%20UI%20Score-100-111827.svg)](references/clinical-ui-score.md)
 [![Skills](https://img.shields.io/badge/skills-12-111827.svg)](skills/manifest.json)
-[![Evals](https://img.shields.io/badge/evals-72-111827.svg)](evals/evals.json)
+[![Evals](https://img.shields.io/badge/evals-72-111827.svg)](evals/index.json)
 
 **Created by Juan Mora Delgado.** Open source under the MIT License.
 
@@ -110,7 +110,6 @@ Vanilla coding agent   vs   Generic anti-slop      vs   Clinical UI Skills
 
 The goal is not to prove that one screenshot is prettier. The goal is to measure whether the output is better at the work healthcare software actually needs to support.
 
-
 ## Three synthetic before/after demos
 
 The repository ships rendered examples so the project can be judged visually before anyone installs it. These are illustrative demos using synthetic data — not claims from a controlled benchmark run.
@@ -175,7 +174,7 @@ Each pattern is documented as **signal → why it fails → better direction**, 
 
 ## ClinicalUIBench starts here
 
-`evals/evals.json` includes **72 synthetic v0.1 scenarios across 10 categories**, including:
+`evals/index.json` includes **72 synthetic v0.1 scenarios across 10 categories**, including:
 
 - inpatient worklists;
 - anticoagulation review;
