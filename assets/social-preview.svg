@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640">
+  <rect width="1280" height="640" fill="#152126"/>
+  <rect x="56" y="56" width="1168" height="528" rx="18" fill="#f7f9f9"/>
+  <text x="96" y="132" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="700" fill="#52636b" letter-spacing="2">OPEN AGENT SKILLS FOR HEALTHCARE FRONTENDS</text>
+  <text x="96" y="220" font-family="DejaVu Sans, sans-serif" font-size="58" font-weight="800" fill="#172126">Clinical UI Skills</text>
+  <text x="96" y="278" font-family="DejaVu Sans, sans-serif" font-size="28" font-weight="500" fill="#3f5057">Stop coding agents from turning healthcare software</text>
+  <text x="96" y="318" font-family="DejaVu Sans, sans-serif" font-size="28" font-weight="500" fill="#3f5057">into generic AI SaaS.</text>
+  <line x1="96" y1="364" x2="1184" y2="364" stroke="#ccd7da" stroke-width="2"/>
+  <text x="96" y="420" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="800" fill="#172126">12 skills</text>
+  <text x="270" y="420" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="800" fill="#172126">72 evals</text>
+  <text x="440" y="420" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="800" fill="#172126">ClinicalUIBench</text>
+  <text x="716" y="420" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="800" fill="#172126">MIT</text>
+  <rect x="96" y="468" width="430" height="64" rx="8" fill="#eaf0f1"/>
+  <text x="118" y="510" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" fill="#284e5a">NO UNEXAMINED DEFAULTS.</text>
+  <text x="96" y="565" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#63737a">Created by Juan Mora Delgado</text>
+</svg>

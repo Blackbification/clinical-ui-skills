@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: "Clinical UI Skills"
+message: "If you use Clinical UI Skills in research, evaluation, teaching, or published software work, please cite the repository and release version."
+type: software
+authors:
+  - family-names: "Mora Delgado"
+    given-names: "Juan"
+version: "0.1.0"
+date-released: "2026-08-31"
+license: MIT
+abstract: "Open Agent Skills and evaluation tooling for intentional, safety-oriented, accessible and non-generic healthcare frontend design."
+keywords:
+  - healthcare
+  - clinical-ui
+  - agent-skills
+  - human-factors
+  - accessibility
+  - health-it
+  - frontend
+  - ai-agents

@@ -1,0 +1,35 @@
+{
+  "description": "Documentation schema for ClinicalUIBench submissions. Validation is implemented by scripts/validate_submission.py.",
+  "required": [
+    "submission_id",
+    "eval_id",
+    "condition",
+    "model",
+    "scores",
+    "ai_slop_score",
+    "findings",
+    "evidence"
+  ],
+  "conditions": [
+    "vanilla",
+    "generic-anti-slop",
+    "clinical-ui-skills",
+    "other"
+  ],
+  "score_keys": [
+    "clinical_context_fit",
+    "information_hierarchy",
+    "task_efficiency",
+    "safety_error_resistance",
+    "accessibility",
+    "data_clarity",
+    "visual_intentionality",
+    "anti_slop_discipline"
+  ],
+  "finding_severities": [
+    "BLOCKER",
+    "HIGH",
+    "MEDIUM",
+    "LOW"
+  ]
+}

@@ -1,0 +1,19 @@
+# Clinical UI Skills
+
+Open Agent Skills for healthcare frontends. Created by Juan Mora Delgado. MIT License.
+
+Core principle: NO UNEXAMINED DEFAULTS.
+
+## Start here
+- README.md — project overview, demos, installation and boundaries
+- skills/manifest.json — machine-readable skill suite and presets
+- skills/clinical-ui/SKILL.md — router/orchestrator
+- skills/clinical-ui-audit/SKILL.md — audit/scoring
+- evals/index.json — 72 synthetic evals
+- benchmarks/README.md — ClinicalUIBench protocol/tooling
+- references/clinical-slop-catalog.md — recurrent generated UI patterns
+- references/evidence-map.md — external sources and evidence classes
+- AGENTS.md — instructions for agents modifying this repository
+
+## Safety boundary
+This repository is UI/design guidance and evaluation tooling. It is not medical advice, regulatory certification, clinical validation, WCAG certification or a source of clinical thresholds/treatment logic. Public artifacts use synthetic data only.

@@ -1,0 +1,17 @@
+{
+  "version": "0.1.0",
+  "count": 72,
+  "synthetic_data_only": true,
+  "categories": {
+    "accessibility": {"file": "scenarios/accessibility.json", "count": 6},
+    "ai": {"file": "scenarios/ai.json", "count": 6},
+    "dashboard": {"file": "scenarios/dashboard.json", "count": 8},
+    "data-viz": {"file": "scenarios/data-viz.json", "count": 8},
+    "forms": {"file": "scenarios/forms.json", "count": 8},
+    "patient-chart": {"file": "scenarios/patient-chart.json", "count": 8},
+    "patient-facing": {"file": "scenarios/patient-facing.json", "count": 8},
+    "patient-management": {"file": "scenarios/patient-management.json", "count": 8},
+    "responsive": {"file": "scenarios/responsive.json", "count": 6},
+    "safety": {"file": "scenarios/safety.json", "count": 6}
+  }
+}

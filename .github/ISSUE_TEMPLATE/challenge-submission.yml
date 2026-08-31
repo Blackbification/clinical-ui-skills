@@ -1,0 +1,63 @@
+name: "#ClinicalUIChallenge submission"
+description: "Submit a reproducible vanilla vs Clinical UI Skills comparison using synthetic data."
+title: "[challenge] "
+labels: ["challenge"]
+body:
+  - type: input
+    id: eval
+    attributes:
+      label: Eval ID or scenario
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Model / coding tool
+    validations:
+      required: true
+  - type: input
+    id: viewport
+    attributes:
+      label: Viewport / device
+      placeholder: "e.g. 1440×900 desktop"
+    validations:
+      required: true
+  - type: textarea
+    id: prompt
+    attributes:
+      label: Prompt
+    validations:
+      required: true
+  - type: textarea
+    id: scores
+    attributes:
+      label: Scores
+      placeholder: |
+        Vanilla Clinical UI Score:
+        Skills Clinical UI Score:
+        Vanilla AI Slop Score:
+        Skills AI Slop Score:
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: What improved, regressed or surprised you?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Synthetic screenshots / reproduction link
+      description: Attach only synthetic, non-confidential examples.
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Challenge rules
+      options:
+        - label: "The comparison uses the same task and comparable model/settings across conditions."
+          required: true
+        - label: "All displayed patient/clinical data is synthetic and not derived from a real patient record."
+          required: true
+        - label: "I am reporting material regressions as well as improvements."
+          required: true

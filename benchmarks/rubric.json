@@ -1,0 +1,47 @@
+{
+  "version": "0.1.0",
+  "dimensions": {
+    "clinical_context_fit": {
+      "label": "Clinical context fit",
+      "max": 15
+    },
+    "information_hierarchy": {
+      "label": "Information hierarchy",
+      "max": 15
+    },
+    "task_efficiency": {
+      "label": "Task efficiency",
+      "max": 15
+    },
+    "safety_error_resistance": {
+      "label": "Safety & error resistance",
+      "max": 20
+    },
+    "accessibility": {
+      "label": "Accessibility",
+      "max": 15
+    },
+    "data_clarity": {
+      "label": "Data clarity",
+      "max": 10
+    },
+    "visual_intentionality": {
+      "label": "Visual intentionality",
+      "max": 5
+    },
+    "anti_slop_discipline": {
+      "label": "Anti-slop discipline",
+      "max": 5
+    }
+  },
+  "caps": {
+    "unresolved_blocker_total_max": 49,
+    "two_high_safety_dimension_max": 8,
+    "inaccessible_primary_task_accessibility_max": 7
+  },
+  "ai_slop_score": {
+    "min": 0,
+    "max": 10,
+    "lower_is_better": true
+  }
+}

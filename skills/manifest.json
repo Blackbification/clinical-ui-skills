@@ -1,0 +1,27 @@
+{
+  "name": "clinical-ui-skills",
+  "version": "0.1.0",
+  "author": "Juan Mora Delgado",
+  "license": "MIT",
+  "skills": [
+    {"name":"clinical-ui","role":"router","summary":"Context classification and skill routing."},
+    {"name":"anti-slop-core","role":"core","summary":"Generic anti-default frontend discipline."},
+    {"name":"clinician-dashboard","role":"clinician","summary":"Multi-patient dashboards and worklists."},
+    {"name":"patient-chart","role":"clinician","summary":"Single-patient longitudinal charts."},
+    {"name":"patient-management","role":"operations","summary":"Search, queues, appointments, wards and beds."},
+    {"name":"clinical-forms","role":"cross-cutting","summary":"Clinical/patient data entry and documentation."},
+    {"name":"clinical-safety-ui","role":"cross-cutting","summary":"Scope, warnings, missingness, failures and confirmations."},
+    {"name":"clinical-data-viz","role":"cross-cutting","summary":"Results, trends and quantitative displays."},
+    {"name":"patient-facing-ui","role":"patient","summary":"Patient portals and mobile apps."},
+    {"name":"clinical-accessibility","role":"cross-cutting","summary":"Accessible clinical/patient UI."},
+    {"name":"clinical-ai-ui","role":"ai","summary":"Visible AI features, provenance, review and actions."},
+    {"name":"clinical-ui-audit","role":"audit","summary":"Cross-cutting audit and scoring."}
+  ],
+  "presets": {
+    "clinician":["clinical-ui","anti-slop-core","clinician-dashboard","patient-chart","clinical-forms","clinical-safety-ui","clinical-data-viz","clinical-accessibility","clinical-ai-ui","clinical-ui-audit"],
+    "patient":["clinical-ui","anti-slop-core","patient-facing-ui","clinical-forms","clinical-safety-ui","clinical-data-viz","clinical-accessibility","clinical-ai-ui","clinical-ui-audit"],
+    "operations":["clinical-ui","anti-slop-core","patient-management","clinical-forms","clinical-safety-ui","clinical-accessibility","clinical-ui-audit"],
+    "ai":["clinical-ui","anti-slop-core","clinical-ai-ui","clinical-safety-ui","clinical-accessibility","clinical-ui-audit"],
+    "all":["clinical-ui","anti-slop-core","clinician-dashboard","patient-chart","patient-management","clinical-forms","clinical-safety-ui","clinical-data-viz","patient-facing-ui","clinical-accessibility","clinical-ai-ui","clinical-ui-audit"]
+  }
+}

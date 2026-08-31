@@ -1,0 +1,45 @@
+name: ClinicalUIBench submission
+description: Submit a reproducible benchmark run using synthetic data only.
+title: "[Bench] "
+labels: [benchmark]
+body:
+  - type: checkboxes
+    attributes:
+      label: Data safety
+      options:
+        - label: This submission contains synthetic data only and no PHI/PII/confidential patient material.
+          required: true
+  - type: input
+    id: eval
+    attributes:
+      label: Eval ID
+      placeholder: dashboard-01
+    validations:
+      required: true
+  - type: dropdown
+    id: condition
+    attributes:
+      label: Condition
+      options: [vanilla, generic-anti-slop, clinical-ui-skills, other]
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Model / coding agent
+    validations:
+      required: true
+  - type: textarea
+    id: reproducibility
+    attributes:
+      label: Reproducibility details
+      description: Framework, tool access, iteration budget, viewports and deviations.
+    validations:
+      required: true
+  - type: textarea
+    id: artifacts
+    attributes:
+      label: Artifacts
+      description: Link to source/screenshots/submission JSON. Do not include real patient data.
+    validations:
+      required: true

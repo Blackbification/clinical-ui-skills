@@ -1,0 +1,44 @@
+{
+  "submission_id": "demo-dashboard-01-clinical-ui-skills",
+  "eval_id": "dashboard-01",
+  "condition": "clinical-ui-skills",
+  "model": "example-model",
+  "model_version": "example-version",
+  "date": "2026-08-31",
+  "framework": "static-html-demo",
+  "iteration_budget": 1,
+  "scores": {
+    "clinical_context_fit": 13,
+    "information_hierarchy": 14,
+    "task_efficiency": 13,
+    "safety_error_resistance": 17,
+    "accessibility": 13,
+    "data_clarity": 9,
+    "visual_intentionality": 4,
+    "anti_slop_discipline": 5
+  },
+  "ai_slop_score": 1,
+  "findings": [
+    {
+      "severity": "MEDIUM",
+      "category": "accessibility",
+      "evidence": "Illustrative sample only",
+      "why_it_matters": "Sample demonstrates schema.",
+      "fix": "Run real review before publishing benchmark result.",
+      "verification": "Re-review with representative evidence."
+    }
+  ],
+  "evidence": {
+    "screenshots": [],
+    "source_paths": [
+      "examples/demo-01-inpatient-worklist/clinical-ui.html"
+    ],
+    "notes": "Illustrative schema sample. Do not treat as a benchmark result."
+  },
+  "flags": {
+    "inaccessible_primary_task": false
+  },
+  "reviewers": [
+    "example-reviewer"
+  ]
+}

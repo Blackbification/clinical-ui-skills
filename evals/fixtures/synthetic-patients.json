@@ -1,0 +1,9 @@
+{
+  "synthetic": true,
+  "notice": "Entirely synthetic demonstration data. Not derived from or lightly modified from any real patient record.",
+  "patients": [
+    {"id":"SYN-0001","name":"Synthetic Patient 001","dob":"1975-04-12","location":"Ward A / Bed 12","status":"synthetic-demo"},
+    {"id":"SYN-0002","name":"Synthetic Patient 002","dob":"1968-11-03","location":"Ward A / Bed 14","status":"synthetic-demo"},
+    {"id":"SYN-0003","name":"Synthetic Patient 003","dob":"1982-02-19","location":"Outpatient","status":"synthetic-demo"}
+  ]
+}

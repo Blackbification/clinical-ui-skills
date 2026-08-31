@@ -1,0 +1,122 @@
+[
+  {
+    "id": "generic-gradient",
+    "severity": "LOW",
+    "pattern": "\\bbg-gradient-|linear-gradient\\(|radial-gradient\\(",
+    "message": "Gradient detected. Verify semantic/product purpose rather than generic decoration."
+  },
+  {
+    "id": "backdrop-blur",
+    "severity": "LOW",
+    "pattern": "\\bbackdrop-blur|backdrop-filter\\s*:",
+    "message": "Backdrop blur detected. Inspect contrast and whether translucency communicates a real layer."
+  },
+  {
+    "id": "sparkle-ai",
+    "severity": "LOW",
+    "pattern": "\\b(Sparkles|MagicWand|WandSparkles|sparkle)\\b|✨",
+    "message": "Common AI/sparkle motif detected. Prefer a descriptive affordance when decorative."
+  },
+  {
+    "id": "hidden-focus",
+    "severity": "HIGH",
+    "pattern": "\\b(outline-none|focus:outline-none)\\b",
+    "message": "Focus suppression detected. Verify an equally visible focus-visible style."
+  },
+  {
+    "id": "clickable-div",
+    "severity": "HIGH",
+    "pattern": "<div[^>]+onClick\\s*=",
+    "message": "Clickable div detected. Prefer semantic button/link or complete keyboard semantics."
+  },
+  {
+    "id": "clickable-span",
+    "severity": "HIGH",
+    "pattern": "<span[^>]+onClick\\s*=",
+    "message": "Clickable span detected. Prefer semantic button/link or complete keyboard semantics."
+  },
+  {
+    "id": "placeholder-input",
+    "severity": "MEDIUM",
+    "pattern": "<input[^>]+placeholder\\s*=",
+    "message": "Placeholder detected. Verify a persistent visible/programmatic label also exists."
+  },
+  {
+    "id": "large-radius-tailwind",
+    "severity": "LOW",
+    "pattern": "\\brounded-(2xl|3xl|full)\\b",
+    "message": "Large/full radius detected. Inspect whether repeated AI-default styling."
+  },
+  {
+    "id": "colored-shadow",
+    "severity": "LOW",
+    "pattern": "\\bshadow-(purple|violet|indigo|blue|cyan|teal|green|red|rose|pink|orange|amber)-",
+    "message": "Colored shadow/glow detected. Verify it does not compete with information."
+  },
+  {
+    "id": "hover-scale",
+    "severity": "LOW",
+    "pattern": "\\bhover:scale-",
+    "message": "Hover scale detected. Verify it helps affordance and does not destabilize dense UI."
+  },
+  {
+    "id": "tiny-text",
+    "severity": "MEDIUM",
+    "pattern": "\\btext-\\[(?:9|10|11)px\\]|\\btext-\\[0\\.[5-6]\\d*rem\\]",
+    "message": "Very small text detected. Inspect readability, zoom and suppressed metadata."
+  },
+  {
+    "id": "pulse-animation",
+    "severity": "LOW",
+    "pattern": "\\banimate-pulse\\b|animation\\s*:\\s*[^;]*(pulse|blink)",
+    "message": "Pulse/blink detected. Verify it is not used as the sole urgency cue or decorative AI motion."
+  },
+  {
+    "id": "pie-donut",
+    "severity": "LOW",
+    "pattern": "\\b(PieChart|Doughnut|DonutChart|doughnut)\\b",
+    "message": "Pie/donut visualization detected. Verify part-to-whole comparison truly benefits from it."
+  },
+  {
+    "id": "gauge",
+    "severity": "LOW",
+    "pattern": "\\b(Gauge|RadialBarChart|Speedometer)\\b",
+    "message": "Gauge/radial visualization detected. Verify it is more informative than a value/range."
+  },
+  {
+    "id": "health-score",
+    "severity": "MEDIUM",
+    "pattern": "\\b(health|wellness|risk)\\s+score\\b",
+    "message": "Score language detected. Verify score provenance/validation and that UI does not invent clinical meaning."
+  },
+  {
+    "id": "ai-powered-copy",
+    "severity": "LOW",
+    "pattern": "\\bAI[- ]powered\\b|\\bmagic\\s+(insight|summary|analysis)",
+    "message": "Generic AI marketing copy detected inside product UI. Prefer task-specific capability language."
+  },
+  {
+    "id": "tooltip-only-title",
+    "severity": "LOW",
+    "pattern": "<(?:button|a)[^>]+title\\s*=",
+    "message": "Title tooltip on interactive control detected. Verify visible/accessible naming and no essential hover-only content."
+  },
+  {
+    "id": "truncate",
+    "severity": "LOW",
+    "pattern": "\\btruncate\\b|text-overflow\\s*:\\s*ellipsis",
+    "message": "Text truncation detected. Verify patient identity, units, warnings and critical values remain fully accessible."
+  },
+  {
+    "id": "emoji-ui",
+    "severity": "LOW",
+    "pattern": "[⚠️🚨✨🩺💊❤️💚🟢🔴🟡]",
+    "message": "Emoji detected in UI source. Verify it is not being used as a clinical/AI semantic substitute."
+  },
+  {
+    "id": "full-rounded-repetition",
+    "severity": "LOW",
+    "pattern": "\\brounded-full\\b",
+    "message": "Pill styling detected. Inspect whether semantic states are being over-compressed into pills."
+  }
+]

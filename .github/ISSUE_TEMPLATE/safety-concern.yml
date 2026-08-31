@@ -1,0 +1,41 @@
+name: "Clinical UI safety concern"
+description: "Report repository guidance that could encourage a high-consequence UI misunderstanding or use error."
+title: "[safety] "
+labels: ["safety"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include PHI/PII, confidential product details, credentials or exploit details. Use private vulnerability reporting for security-sensitive reports when available.
+  - type: textarea
+    id: concern
+    attributes:
+      label: Concern
+      description: Which rule/example/eval could encourage unsafe UI behavior?
+    validations:
+      required: true
+  - type: textarea
+    id: consequence
+    attributes:
+      label: Plausible use consequence
+      description: Describe the UI misunderstanding or workflow failure; do not invent clinical certainty.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Synthetic reproduction
+      description: Provide a synthetic scenario sufficient to reproduce the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: fix
+    attributes:
+      label: Proposed fix or safer wording
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy confirmation
+      options:
+        - label: "This report contains no PHI/PII or confidential material."
+          required: true
